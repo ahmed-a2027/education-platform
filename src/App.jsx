@@ -6,11 +6,13 @@ import CourseDetails from "./pages/CourseDetails/CourseDetails"
 import Login from "./pages/Login/Login"
 import Register from "./pages/Register/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/courses" element={<Courses/>}/>
